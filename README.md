@@ -3,7 +3,7 @@ myLibrary
 
 A utility library with handy classes and functions
 
-**Everything is under namespace wul (wilkas utility library) **
+**Everything is under namespace wul (wilkas utility library)**
 
 File Properties Class
 --------------
