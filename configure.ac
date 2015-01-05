@@ -8,6 +8,7 @@ AM_INIT_AUTOMAKE
 AC_PROG_CXX
 AC_PROG_LIBTOOL
 
+CPPFLAGS="${CPPFLAGS} -std=c++11 -pipe -Wno-deprecated-register -O3 -march=native"
 AC_CONFIG_FILES([Makefile wilkasUtilityLib.pc])
 
 AC_OUTPUT
