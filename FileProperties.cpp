@@ -2,7 +2,7 @@
 
 namespace wul
 {
-	FileProperties::FileProperties(std::string FullPath) : fullpath(FullPath) {
+	FileProperties::FileProperties(std::string &FullPath) : fullpath(FullPath) {
 			get_filename();
 			get_directory();
 		}

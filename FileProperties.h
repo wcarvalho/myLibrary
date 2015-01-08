@@ -9,7 +9,7 @@ namespace wul
 	class FileProperties 
 	{
 	public:
-		FileProperties(std::string FullPath);
+		FileProperties(std::string &FullPath);
 		~FileProperties();
 
 		void get_filename();
@@ -22,11 +22,13 @@ namespace wul
 		void appendFileToDirectory(std::string directory, std::string &file){
 			file = directory.append(file);
 		}
+		std::string file(){ return fullpath; }
 		
 		std::string suffix;
-		std::string fullpath;
 		std::string filename;
 		std::string directory;
+	private:
+		std::string fullpath;
 	};
 }
 
