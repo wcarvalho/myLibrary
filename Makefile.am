@@ -3,13 +3,15 @@ lib_LTLIBRARIES = \
 
 include_HEADERS =  \
 	utility_library.h \
-	FileProperties.h
+	FileProperties.h \
+	io.h
 
 libwilkasUtilityLib_la_SOURCES = \
 	utility_library.cpp \
-	FileProperties.cpp
+	FileProperties.cpp \
+	io.cpp
 
-##libwilkasUtilityLib_la_LIBADD = 
+##libwilkasUtilityLib_la_LIBADD =
 
 libwilkasUtilityLib_la_LDFLAGS = -version-info 1:0:0
 
